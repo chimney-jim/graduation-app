@@ -22,11 +22,3 @@ C:\Users\Andrew\Project_vs2010\GraduateAppProcessing\GraduateAppProcessing\obj\D
 C:\Users\Andrew\Project_vs2010\GraduateAppProcessing\GraduateAppProcessing\obj\Debug\GenerateResource.write.1.tlog
 C:\Users\Andrew\Project_vs2010\GraduateAppProcessing\GraduateAppProcessing\obj\Debug\GraduateAppProcessing.dll
 C:\Users\Andrew\Project_vs2010\GraduateAppProcessing\GraduateAppProcessing\obj\Debug\GraduateAppProcessing.pdb
-C:\Users\Stigsan\Downloads\code2\GraduateAppProcessing\GraduateAppProcessing\bin\GraduateAppProcessing.dll
-C:\Users\Stigsan\Downloads\code2\GraduateAppProcessing\GraduateAppProcessing\bin\GraduateAppProcessing.pdb
-C:\Users\Stigsan\Downloads\code2\GraduateAppProcessing\GraduateAppProcessing\obj\Debug\ResolveAssemblyReference.cache
-C:\Users\Stigsan\Downloads\code2\GraduateAppProcessing\GraduateAppProcessing\obj\Debug\GraduateAppProcessing.Properties.Resources.resources
-C:\Users\Stigsan\Downloads\code2\GraduateAppProcessing\GraduateAppProcessing\obj\Debug\GenerateResource.read.1.tlog
-C:\Users\Stigsan\Downloads\code2\GraduateAppProcessing\GraduateAppProcessing\obj\Debug\GenerateResource.write.1.tlog
-C:\Users\Stigsan\Downloads\code2\GraduateAppProcessing\GraduateAppProcessing\obj\Debug\GraduateAppProcessing.dll
-C:\Users\Stigsan\Downloads\code2\GraduateAppProcessing\GraduateAppProcessing\obj\Debug\GraduateAppProcessing.pdb

@@ -60,10 +60,11 @@
     <Content Include="Account\ChangePasswordSuccess.aspx" />
     <Content Include="Account\Login.aspx" />
     <Content Include="Account\Register.aspx" />
+    <Content Include="Error_ViewApplication.aspx" />
+    <Content Include="Secretary.aspx" />
     <None Include="Resources\SPSU_index_logo.png" />
     <Content Include="ApplicationForm.aspx" />
     <Content Include="Resources\SPSU_grey-hex_tile.jpg" />
-    <Content Include="Secretary.aspx" />
     <Content Include="Styles\Site.css" />
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
@@ -71,6 +72,7 @@
     <Content Include="Scripts\jquery-1.4.1.js" />
     <Content Include="Scripts\jquery-1.4.1.min.js" />
     <Content Include="Styles\SiteApplicationForm.css" />
+    <Content Include="ViewApplication.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -133,6 +135,13 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Error_ViewApplication.aspx.cs">
+      <DependentUpon>Error_ViewApplication.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Error_ViewApplication.aspx.designer.cs">
+      <DependentUpon>Error_ViewApplication.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -156,6 +165,13 @@
     </Compile>
     <Compile Include="Site.Master.designer.cs">
       <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="ViewApplication.aspx.cs">
+      <DependentUpon>ViewApplication.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewApplication.aspx.designer.cs">
+      <DependentUpon>ViewApplication.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

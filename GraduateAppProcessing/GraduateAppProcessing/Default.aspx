@@ -5,12 +5,27 @@
 </asp:Content>
 <asp:Content ID="BodyContent" runat="server" ContentPlaceHolderID="MainContent">
     <h2>
-        Welcome to ASP.NET!
+        Content header
     </h2>
     <p>
-        New content here
+        Content body
     </p>
     <asp:TextBox ID="TextBox1" runat="server" Text="Placeholder"></asp:TextBox>
     <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
-    <a href="ApplicationForm.aspx">Application form page (Temp Link)</a>
+    <br />
+    <br />
+    <label style="font-size:larger">Temporary backdoor links: </label>
+    <br />
+    <br />
+    <a href="Secretary.aspx">Secretary page</a>
+    <br />
+    <br />
+    <a href="ApplicationForm.aspx">Create application</a>
+    <br />
+    <br />
+    <a href="ViewApplication.aspx">View application</a>
+    <br />
+    <br />
+    <asp:Button ID="btnRedirect" runat="server" Text="Button" 
+        onclick="btnRedirect_Click" />
 </asp:Content>

@@ -5,16 +5,6 @@
     <script src="Scripts/jquery-1.4.1.js" type="text/javascript"></script>
     <script type="text/javascript">
         $().ready(function () {
-            var MaxLength = 20;
-
-            $('#<%= txtComment.ClientID %>').bind('keyup keydown blur copy paste', function (e) {
-                if ($(this).val().length > MaxLength) {
-                    $(this).val($(this).val().substring(0, MaxLength));
-                }
-            });
-        });
-
-        $().ready(function () {
             $('#<%= rbFinalizedYes.ClientID %>').click(function () {
                 if ($('#<%= rbFinalizedYes.ClientID %>').is(':checked')) {
                     //alert('aaa')
@@ -24,7 +14,9 @@
                     $('textarea').attr('disabled', 'disabled');
                     //alert('Application has been finalized!')
                     $('#<%= lblAppDetailsErrors.ClientID %>').hide();       //hide error label
-                    $('#<%= lblErrorApplicationForm.ClientID %>').hide();
+                    $('#<%= rbUndecided.ClientID %>').attr('disabled', 'disabled');
+                    $('#<%= rbAccepted.ClientID %>').attr('disabled', 'disabled');
+                    $('#<%= rbDenied.ClientID %>').attr('disabled', 'disabled');
                 }
             });
 
@@ -35,6 +27,9 @@
                     $('select').removeAttr('disabled', 'disabled');
                     $('textarea').removeAttr('disabled', 'disabled');
                     //alert('Application is now editable!')
+                    $('#<%= rbUndecided.ClientID %>').removeAttr('disabled', 'disabled');
+                    $('#<%= rbAccepted.ClientID %>').removeAttr('disabled', 'disabled');
+                    $('#<%= rbDenied.ClientID %>').removeAttr('disabled', 'disabled');
                 }
             });
         });
@@ -56,7 +51,7 @@
                     <asp:Label ID="lblApplicationID" CssClass="leftInnerContainerLabel" runat="server" Text="Application ID: "></asp:Label>
                 </div>
                 <div class="leftInnerContainerRightControls">
-                    <asp:TextBox ID="txtApplicationId" runat="server" Text="Use label"></asp:TextBox><br />
+                    <asp:Label ID="lblApplicationIdNumber" runat="server" Text=" tis a Label"></asp:Label><br />
                 </div>
             </div>
             <div class="leftControlsAppDetails">
@@ -97,7 +92,9 @@
                     <asp:Label ID="lblTerm" CssClass="leftInnerContainerLabel" runat="server" Text="Term: "></asp:Label>
                 </div>
                 <div class="leftInnerContainerRightControls">
-                    <asp:TextBox ID="txtTerm" runat="server"></asp:TextBox><br />
+                    <asp:DropDownList ID="ddlTerm" runat="server" Width="142px">
+                    </asp:DropDownList>
+                    <br />
                 </div>
             </div>
             <div class="leftControlsAppDetails">
@@ -116,7 +113,7 @@
                     <asp:Label ID="lblTimesViewed" CssClass="rightInnerContainerLabel" runat="server" Text="Times Viewed: "></asp:Label>
                 </div>
                 <div class="rightInnerContainerRightControls">
-                    <asp:TextBox ID="txtTimesViewed" runat="server" Text="Use label"></asp:TextBox><br />
+                    <asp:Label ID="lblTimesReviewed" runat="server" Text="--"></asp:Label><br />
                 </div>
             </div>
             
@@ -125,7 +122,7 @@
                     <asp:Label ID="lblLastViewed" CssClass="rightInnerContainerLabel" runat="server" Text="Last Viewed: "></asp:Label>
                 </div>
                 <div class="rightInnerContainerRightControls">
-                    <asp:TextBox ID="txtLastViewed" runat="server" Text="Use label"></asp:TextBox><br />
+                    <asp:Label ID="lblLastViewedDate" runat="server" Text="--"></asp:Label><br />
                 </div>
             </div>
             <div class="rightControlsAppDetails">
@@ -142,7 +139,7 @@
                     <asp:Label ID="Label1Hidden" runat="server" CssClass="rightInnerContainerLabel" Text="" Visible="False"></asp:Label>
                 </div>
                 <div class="rightInnerContainerRadioButtons">
-                    <asp:RadioButton ID="RadioButton2" runat="server" Text="Accepted" GroupName="groupIsAccepted"/>
+                    <asp:RadioButton ID="rbAccepted" runat="server" Text="Accepted" GroupName="groupIsAccepted"/>
                 </div>
             </div>
             <div class="rightControlsAppDetails">
@@ -150,7 +147,7 @@
                     <asp:Label ID="Label2Hidden" runat="server" CssClass="rightInnerContainerLabel" Text="" Visible="False"></asp:Label>
                 </div>
                 <div class="rightInnerContainerRadioButtons">
-                    <asp:RadioButton ID="RadioButton4" runat="server" Text="Denied" GroupName="groupIsAccepted"/>
+                    <asp:RadioButton ID="rbDenied" runat="server" Text="Denied" GroupName="groupIsAccepted"/>
                 </div>
             </div>
             <div class="rightControlsAppDetails">
@@ -173,7 +170,7 @@
         </div>
     </fieldset>
     <div>
-        <asp:Label ID="lblAppDetailsErrors" CssClass="appDetailsErrorLabels" runat="server" Text=""></asp:Label>
+        <asp:Label ID="lblAppDetailsErrors" CssClass="ErrorLabels" runat="server" Text=""></asp:Label>
     </div>
 
 
@@ -243,12 +240,15 @@
             </div>
         </div>
     </fieldset>
-    
+    <div>
+        <asp:Label ID="lblPreReqErrors" CssClass="ErrorLabels" runat="server" Text=""></asp:Label>
+    </div>
+
+    <%-- 
     <fieldset id="comment">
         <legend>Comments</legend>
         <asp:Label ID="lblTempComment" runat="server" Text="Placeholder: This is where the comments will be shown"></asp:Label>
-        <asp:ListView ID="lvComment" runat="server" 
-            onselectedindexchanged="lvComment_SelectedIndexChanged">
+        <asp:ListView ID="lvComment" runat="server">
             <ItemTemplate>
                 <li class="commentItem">
                     <asp:Label ID="lblId" Text='<%#Eval("CommentId") %>' runat="server"></asp:Label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -267,7 +267,7 @@
         
         <asp:Label ID="lblErrorApplicationForm" runat="server" ForeColor="#FF3300"></asp:Label>
     </fieldset>
-    <br />
+    <br />--%>
     <div class="buttonSaveApp">
         <asp:Button ID="btnSaveBottom" runat="server" Text="Save Application" 
             Height="35px" onclick="btnSaveBottom_Click" />

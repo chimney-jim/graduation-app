@@ -21,6 +21,7 @@ namespace GraduateAppProcessing
         }
 
         //DB_name = application (mysql)
+        //USE THIS
         private String _connStr2 = ConfigurationManager.ConnectionStrings["MySQLConnection2"].ToString();
 
         public String ConnStr2

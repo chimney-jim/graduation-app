@@ -10,16 +10,52 @@
 namespace GraduateAppProcessing {
     
     
-    public partial class ApplicationForm {
+    public partial class ViewApplication {
         
         /// <summary>
-        /// btnSaveTop control.
+        /// btnPrevious control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnSaveTop;
+        protected global::System.Web.UI.WebControls.Button btnPrevious;
+        
+        /// <summary>
+        /// btnNext control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnNext;
+        
+        /// <summary>
+        /// Label1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label1;
+        
+        /// <summary>
+        /// TextBox1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TextBox1;
+        
+        /// <summary>
+        /// btnSaveEdit control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnSaveEdit;
         
         /// <summary>
         /// lblApplicationID control.
@@ -31,13 +67,13 @@ namespace GraduateAppProcessing {
         protected global::System.Web.UI.WebControls.Label lblApplicationID;
         
         /// <summary>
-        /// txtApplicationId control.
+        /// lblApplicationIdNumber control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtApplicationId;
+        protected global::System.Web.UI.WebControls.Label lblApplicationIdNumber;
         
         /// <summary>
         /// lblDateSubmitted control.
@@ -121,13 +157,13 @@ namespace GraduateAppProcessing {
         protected global::System.Web.UI.WebControls.Label lblTerm;
         
         /// <summary>
-        /// txtTerm control.
+        /// ddlTerm control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtTerm;
+        protected global::System.Web.UI.WebControls.DropDownList ddlTerm;
         
         /// <summary>
         /// lblYear control.
@@ -148,6 +184,15 @@ namespace GraduateAppProcessing {
         protected global::System.Web.UI.WebControls.TextBox txtYear;
         
         /// <summary>
+        /// lblTimesReviewed control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblTimesReviewed;
+        
+        /// <summary>
         /// lblTimesViewed control.
         /// </summary>
         /// <remarks>
@@ -157,13 +202,13 @@ namespace GraduateAppProcessing {
         protected global::System.Web.UI.WebControls.Label lblTimesViewed;
         
         /// <summary>
-        /// txtTimesViewed control.
+        /// lblLastReviewed control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtTimesViewed;
+        protected global::System.Web.UI.WebControls.Label lblLastReviewed;
         
         /// <summary>
         /// lblLastViewed control.
@@ -173,15 +218,6 @@ namespace GraduateAppProcessing {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblLastViewed;
-        
-        /// <summary>
-        /// txtLastViewed control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtLastViewed;
         
         /// <summary>
         /// lblIsAccepted control.
@@ -211,13 +247,13 @@ namespace GraduateAppProcessing {
         protected global::System.Web.UI.WebControls.Label Label1Hidden;
         
         /// <summary>
-        /// RadioButton2 control.
+        /// rbAccepted control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton RadioButton2;
+        protected global::System.Web.UI.WebControls.RadioButton rbAccepted;
         
         /// <summary>
         /// Label2Hidden control.
@@ -229,13 +265,13 @@ namespace GraduateAppProcessing {
         protected global::System.Web.UI.WebControls.Label Label2Hidden;
         
         /// <summary>
-        /// RadioButton4 control.
+        /// rbDenied control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton RadioButton4;
+        protected global::System.Web.UI.WebControls.RadioButton rbDenied;
         
         /// <summary>
         /// Label3Hidden control.
@@ -436,6 +472,15 @@ namespace GraduateAppProcessing {
         protected global::System.Web.UI.WebControls.Button btnClearRE;
         
         /// <summary>
+        /// lblPreReqErrors control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblPreReqErrors;
+        
+        /// <summary>
         /// lblTempComment control.
         /// </summary>
         /// <remarks>
@@ -445,6 +490,24 @@ namespace GraduateAppProcessing {
         protected global::System.Web.UI.WebControls.Label lblTempComment;
         
         /// <summary>
+        /// ScriptManager1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.ScriptManager ScriptManager1;
+        
+        /// <summary>
+        /// UpdatePanel1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.UpdatePanel UpdatePanel1;
+        
+        /// <summary>
         /// lvComment control.
         /// </summary>
         /// <remarks>
@@ -452,6 +515,15 @@ namespace GraduateAppProcessing {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ListView lvComment;
+        
+        /// <summary>
+        /// UpdatePanel2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.UpdatePanel UpdatePanel2;
         
         /// <summary>
         /// txtComment control.
@@ -479,14 +551,5 @@ namespace GraduateAppProcessing {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblErrorApplicationForm;
-        
-        /// <summary>
-        /// btnSaveBottom control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnSaveBottom;
     }
 }

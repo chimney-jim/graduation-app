@@ -90,15 +90,15 @@ namespace GraduateAppProcessing
             set { _LastViewed = value; }
         }
 
-        private Int32? _IsAccepted = null;  //Default = null, 1 = accepted, 0 = denied
+        private Int32? _IsAccepted = null;  //NULL = 0 = undecided, 1 = denied, 2 = accepted
         public Int32? IsAccepted            //int32? == Nullable<int32>
         {
             get { return _IsAccepted; }
             set { _IsAccepted = value; }
         }
 
-        private bool _IsFinalized = false;
-        public bool IsFinalized
+        private Int32 _IsFinalized = 0;     //NULL = 0 = nothing, 1 = NOT finalized, 2 = finalized
+        public Int32 IsFinalized
         {
             get { return _IsFinalized; }
             set { _IsFinalized = value; }

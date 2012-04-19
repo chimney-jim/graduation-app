@@ -81,7 +81,7 @@ div#rightInnerContainerAppDetails
     padding-left:130px;
 }
 
-.appDetailsErrorLabels
+.ErrorLabels
 {
     color:Red;
     margin-top:-5px;
@@ -93,7 +93,7 @@ div#rightInnerContainerAppDetails
 
 #prereqCourses
 {
-    border-radius:10px;/
+    border-radius:10px;
 }
 
 #listboxPreRequiredCourses
@@ -171,3 +171,42 @@ div#rightInnerContainerAppDetails
 }
 
 /* ---COMMENT ENDS--- */
+
+
+/* ---SECRETARY PAGE--- */
+.gvApplications
+{
+    margin-left:25px;
+}
+
+.gvApplications th a
+{
+    text-decoration:none;
+    color:White;
+}
+
+.gvApplications td a
+{
+    text-decoration:solid;
+}
+
+.gvApplicationsHeader
+{
+    height:70px;
+    text-align:center;
+    background-color:#2F913C;
+}
+
+.gvApplicationsRowStyle
+{
+    background-color:#CCFFFF;
+    height:50px;
+    text-align:center;
+}
+    
+.gvApplicationsAlternatingRowStyle
+{
+    background-color:#CCFFCC;
+    height:50px;
+    text-align:center;
+}

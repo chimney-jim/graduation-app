@@ -38,5 +38,11 @@ namespace GraduateAppProcessing
             ////    }
             ////}   
         }
+
+        protected void btnRedirect_Click(object sender, EventArgs e)
+        {
+            int appNumber = 1;
+            Response.Redirect("ViewApplication.aspx?appNumber=" + appNumber.ToString());
+        }
     }
 }
