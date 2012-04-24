@@ -1,0 +1,227 @@
+﻿body 
+{
+    
+}
+
+/* ---APPLICATION DETAILS STARTS--- */
+
+.buttonSaveApp
+{
+    float:right;
+}
+
+fieldset#appDetails
+{
+    margin-top:-5px;
+    padding-bottom:25px;
+    border-radius:10px;
+    /*background-color:aqua; /* AQUA color = under construction atm*/
+}
+
+div#leftInnerContainerAppDetails
+{
+    position:relative;
+    float:left;
+    padding-left:120px;
+}
+
+div#rightInnerContainerAppDetails
+{
+    position:relative;
+    float:left;
+    padding-left:130px;
+}
+
+.leftInnerContainerLabel
+{
+    text-align:right;    
+}
+
+.leftControlsAppDetails
+{
+    margin-bottom:5px;
+    height:25px;
+    width:270px;
+}
+
+.leftInnerContainerLeftControls
+{
+    float:left;
+}
+
+.leftInnerContainerRightControls
+{
+    float:right;
+}
+
+.rightInnerContainerLabel
+{
+    text-align:left;
+}
+
+.rightControlsAppDetails
+{
+    margin-bottom:5px;
+    height:25px;
+    width:250px;
+}
+
+.rightInnerContainerLeftControls
+{
+    float:left;
+}
+
+.rightInnerContainerRightControls
+{
+    float:right;
+}
+
+.rightInnerContainerRadioButtons
+{
+    padding-left:130px;
+}
+
+.ErrorLabels
+{
+    color:Red;
+    margin-top:-5px;
+}
+
+/* ---APPLICATION DETAILS ENDS--- */
+
+/* ---PREREQ COURSES STARTS--- */
+
+#prereqCourses
+{
+    border-radius:10px;
+}
+
+#listboxPreRequiredCourses
+{
+    float:left;
+    margin-bottom:15px;
+    margin-left:35px;
+}
+
+#moveButtons
+{
+    float:left;
+    
+    margin-left:10px;
+    margin-right:90px;
+}
+
+.buttonPCPTRQNNNE
+{
+    height:40px;
+    width:50px;
+}
+
+#lbbtnPC
+{
+    float:left;
+    margin-right:10px;
+}
+
+#lbbtnPT
+{
+    float:left;
+    margin-right:10px;
+}
+
+#lbbtnRQ
+{
+    float:left;
+}
+
+#lbbtnNNandRE
+{
+    float:left;
+    margin-top:17px;
+}
+
+#lbbtnNN
+{
+    float:left;
+    margin-right:10px;
+}
+
+#lbbtnRE
+{
+    float:left;
+}
+
+/* ---PREREQ COURSES ENDS--- */
+
+/* ---COMMENT STARTS--- */
+
+#comment
+{
+    border-radius:10px;
+}
+
+.commentItem
+{
+    list-style-type:none;
+    border-bottom: 2px solid black;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:20px;
+}
+
+.textAreaComments
+{
+    resize:none;
+}
+
+.dpComment
+{
+    padding:10px;
+    text-decoration-style:none;
+}
+
+.dpNumeric
+{
+    border:1px solid black;
+}
+
+/* ---COMMENT ENDS--- */
+
+
+/* ---SECRETARY PAGE--- */
+.gvApplications
+{
+    margin-left:25px;
+}
+
+.gvApplications th a
+{
+    text-decoration:none;
+    color:White;
+}
+
+.gvApplications td a
+{
+    text-decoration:solid;
+}
+
+.gvApplicationsHeader
+{
+    height:70px;
+    text-align:center;
+    background-color:#2F913C;
+}
+
+.gvApplicationsRowStyle
+{
+    background-color:#CCFFFF;
+    height:50px;
+    text-align:center;
+}
+    
+.gvApplicationsAlternatingRowStyle
+{
+    background-color:#CCFFCC;
+    height:50px;
+    text-align:center;
+}
